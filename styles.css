@@ -1,0 +1,43 @@
+body {
+  background: azure;
+}
+div {
+  border: 1px dashed gray;
+}
+#header {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+form {
+  margin: 10px;
+}
+.text {
+  width: 200px;
+  height: 20px;
+}
+.submit {
+  width: 70px;
+  height: 20px;
+  background: gray;
+  color: white;
+  font-weight: 200;
+}
+#providers {
+  width: 49.5%;
+  height: 500px;
+  text-align: center;
+}
+#details {
+  width: 49.5%;
+  height: 500px;
+  text-align: center;
+}
+footer {
+  clear: both;
+  text-align: center;
+}
