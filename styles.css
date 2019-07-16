@@ -12,11 +12,12 @@ div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: auto;
 }
 form {
   margin: 10px;
 }
-.text {
+.text .text0 {
   width: 200px;
   height: 20px;
 }
@@ -28,14 +29,17 @@ form {
   font-weight: 200;
 }
 #providers {
-  width: 49.5%;
+  width: 49%;
   height: 500px;
   text-align: center;
 }
 #details {
-  width: 49.5%;
+  width: 49%;
   height: 500px;
   text-align: center;
+}
+h4 {
+  margin-top: 5px;
 }
 footer {
   clear: both;
