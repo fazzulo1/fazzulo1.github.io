@@ -1,47 +1,192 @@
 body {
-  background: azure;
+  background: gray;
+  /* background: url('images/brick_road_free.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1%;
 }
 div {
   border: 1px dashed gray;
 }
 #header {
+  /* background: gray; */
+  background: url('images/logo.jpg');
+  background-size: contain;
   text-align: center;
+  /* color: greenyellow; */
 }
+#header h1 {
+  color: goldenrod;
+  padding-bottom: 1%;
+  margin: 1% 0% 5.5% 0.5%;
+  font-size: 1.5em;
+}
+.company {
+  background: white;
+}
+form {
+  margin: 2%;
+  display: inline;
+}
+button {
+  background: rgb(133, 214, 133);
+  height: 30px;
+  width: 210px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgba(53, 50, 50, 0.89);
+  border-radius: 5px;
+}
+/* .text .text0 {
+  width: 200px;
+  height: 20px;
+} */
+/* .submit {
+  width: 70px;
+  height: 20px;
+  background: gray;
+  color: black;
+  font-weight: 200;
+} */
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-basis: 100%;
+  height: auto;
+  justify-content: left;
   overflow: auto;
+  background: url('images/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  /* background: skyblue; */
 }
-form {
-  margin: 10px;
-}
-.text .text0 {
-  width: 200px;
-  height: 20px;
-}
-.submit {
-  width: 70px;
-  height: 20px;
-  background: gray;
-  color: white;
-  font-weight: 200;
-}
-#providers {
-  width: 49%;
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   height: 500px;
-  text-align: center;
+  text-align: left;
 }
-#details {
-  width: 49%;
-  height: 500px;
-  text-align: center;
-}
+
 h4 {
-  margin-top: 5px;
+  color: rgba(53, 50, 50, 0.89);
+  display: inline-block;
+  padding: 10px;
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
-footer {
+.list {
+  width: 33%;
+  height: 15%;
+  font-size: 1em;
+  border: 1px dash gray;
+  color: black;
+  vertical-align: center;
+}
+.footer {
   clear: both;
-  text-align: center;
+  background-image: url('images/logo.jpg');
+  background-position: center;
+  background-size: contain;
+  color: white;
+}
+.footer h1 {
+  margin: 0px;
+}
+iframe {
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  form {
+    margin: 2%;
+    display: inline-block;
+  }
+  button {
+    background: rgb(133, 214, 133);
+  }
+  /* #header h1 {
+    background: rgb(133, 214, 133);
+  } */
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: auto;
+    justify-content: left;
+    overflow: auto;
+    background: skyblue;
+    /* background: url('images/logo.jpg'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    text-align: left;
+  }
+  .list {
+    width: 100%;
+    height: 20%;
+    font-size: 1em;
+    border: 1px dash gray;
+    color: black;
+    vertical-align: center;
+  }
+  div {
+    border: 1px dashed rgb(207, 187, 7);
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  form {
+    margin: 2%;
+    display: inline-block;
+  }
+  button {
+    background: skyblue;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: auto;
+    justify-content: left;
+    overflow: auto;
+    background: rgb(133, 214, 133);
+    /* background: url('images/logo.jpg'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    text-align: left;
+  }
+  .list {
+    width: 100%;
+    height: 20%;
+    font-size: 1em;
+    border: 1px dash gray;
+    color: black;
+    vertical-align: center;
+  }
+  div {
+    border: 1px dashed rgb(207, 187, 7);
+  }
 }
