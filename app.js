@@ -72,8 +72,9 @@ $(() => {
   });
   $('.container1').on('click', '.list', event => {
     event.preventDefault();
-    let value = $(event.currentTarget).text();
-    value = value.split(' ');
+    let value1 = $(event.currentTarget).text();
+    value1 = value1.split(' ');
+    value1 = value1[value1.length - 1];
 
     const endpoint = `https://api.citybik.es${value1}`;
     $.ajax({ url: endpoint }).then(getProvider); // get data asynchronously, when the data gets back, handle it
