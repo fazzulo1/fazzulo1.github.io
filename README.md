@@ -1,8 +1,9 @@
 # fazzulo1.github.io
-
 # Web App Name: findaBIKE. 
 # Goal: This web app helps to find countries and cities where a bicycle rental is available.
 # Languages and Libraries: HTML, CSS, JS, Jquery.
+
+![Screen Shot 2019-07-19 at 3 34 17 PM](https://user-images.githubusercontent.com/51187016/61560656-e21eb880-aa3a-11e9-88c2-48c7c3281145.png)
 
 # Functionality:
 
