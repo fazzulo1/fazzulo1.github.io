@@ -68,7 +68,7 @@ $(() => {
     );
 
     const endpoint = `https://api.citybik.es/v2/networks`;
-    $.ajax({ url: endpoint }).then(getNetwork); // get data asynchronously, when the data gets back, handle it
+    $.ajax({ url: endpoint }).then(getNetwork); // get data asynchronously, when the data gets back, handle it.
   });
   $('.container1').on('click', '.list', event => {
     event.preventDefault();
