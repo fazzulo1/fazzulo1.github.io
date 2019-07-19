@@ -1,16 +1,17 @@
 $(() => {
+  alert(
+    'To find available countries and cities where you can rent a BIKE, CLICK on the GREEN BUTTON'
+  );
   const getNetwork = data => {
     console.log(data.networks.length);
     console.log(data.networks[0].href);
-    // console.log(data.networks[0].location.city);
-    // console.log(data.networks[0].location.country);
     // console.log(data.networks[0].location.latitude);
     // console.log(data.networks[0].location.longitude);
     for (let i = 0; i < data.networks.length; i++) {
       const $list1 = $('<div>').text(
         `City:${data.networks[i].location.city},Country:${
           data.networks[i].location.country
-        },LINK: ${data.networks[i].href}`
+        },Link: ${data.networks[i].href}`
       );
       $list1.addClass('list');
       $('#providers').append($list1);
@@ -27,6 +28,21 @@ $(() => {
       );
       $list.addClass('list');
       $('#providers2').append($list);
+
+      $('#map').empty();
+      $('#map').html(
+        `     <iframe class='map' 
+    width="100%" 
+    height="504"     
+    frameborder="0" 
+    scrolling="no" 
+    marginheight="0" 
+    marginwidth="0" 
+    src='https://maps.google.com/maps?q=${data.network.stations[i].latitude},${
+          data.network.stations[i].longitude
+        }&hl=es;z=50&amp;output=embed'>
+    </iframe>`
+      );
     }
     const $countryName = $('<h4>')
       .text(`City: ${data.network.location.country}`)
@@ -54,7 +70,10 @@ $(() => {
 
   $('.button0').on('click', event => {
     event.preventDefault();
-    // const endpoint = `https://api.citybik.es/v2/networks?`;
+    alert(
+      'To get specific stations where you can findaBIKE, read the instruction and click OK. STEP 1. Scroll down or press CTL+F to look for the bike station. STEP 2. CLICK on the corresponding square'
+    );
+
     const endpoint = `https://api.citybik.es/v2/networks`;
     $.ajax({ url: endpoint }).then(getNetwork); // get data asynchronously, when the data gets back, handle it
   });
@@ -67,7 +86,6 @@ $(() => {
     const value1 = value[value.length - 1];
     console.log(value1);
 
-    // const endpoint = `https://api.citybik.es/v2/networks?`;
     const endpoint = `https://api.citybik.es${value1}`;
     $.ajax({ url: endpoint }).then(getProvider); // get data asynchronously, when the data gets back, handle it
   });
