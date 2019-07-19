@@ -3,10 +3,6 @@ $(() => {
     'To find available countries and cities where you can rent a BIKE, CLICK on the GREEN BUTTON'
   );
   const getNetwork = data => {
-    console.log(data.networks.length);
-    console.log(data.networks[0].href);
-    // console.log(data.networks[0].location.latitude);
-    // console.log(data.networks[0].location.longitude);
     for (let i = 0; i < data.networks.length; i++) {
       const $list1 = $('<div>').text(
         `City:${data.networks[i].location.city},Country:${
@@ -19,7 +15,6 @@ $(() => {
   };
 
   const getProvider = data => {
-    console.log(data.network.stations.length);
     for (let i = 0; i < data.network.stations.length; i++) {
       const $list = $('<div>').text(
         `Station:${data.network.stations[i].name}, free bikes:${
@@ -66,8 +61,6 @@ $(() => {
     $('.company').append($numStations);
   };
 
-  ///////////////////////////////////////////////////////
-
   $('.button0').on('click', event => {
     event.preventDefault();
     alert(
@@ -81,10 +74,6 @@ $(() => {
     event.preventDefault();
     let value = $(event.currentTarget).text();
     value = value.split(' ');
-    console.log(value);
-    console.log(value.length);
-    const value1 = value[value.length - 1];
-    console.log(value1);
 
     const endpoint = `https://api.citybik.es${value1}`;
     $.ajax({ url: endpoint }).then(getProvider); // get data asynchronously, when the data gets back, handle it
