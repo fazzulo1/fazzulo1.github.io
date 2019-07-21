@@ -28,4 +28,4 @@
 
 # 3.1 A note in gold will provide the following instruction "Click on any square in the green panel to get an exact bike station address in the map (Scroll down or press COMMAND+F to look for it)"
 
-# 3. A Google map will display the exact bike location.
+# 3.2 A Google map will display the exact bike location.
