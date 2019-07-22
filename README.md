@@ -10,7 +10,7 @@
 
 # Functionality:
 
-# 1. Popup alert will notify the user to CLICK on a GREEN button to look for a bike rental company on available countries and cities.
+# 1. A popup alert will notify the user to CLICK on a GREEN button to look for a bike rental company on available countries and cities.
 
 # 2. The first panel, in blue, will be populated with a data set showing CITY and COUNTRY, as well as the API link corresponding to the specific company providing the bike rental service.
 
